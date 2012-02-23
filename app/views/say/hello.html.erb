@@ -1,0 +1,22 @@
+<h1>Say#hello</h1>
+<p>
+  It is now <%=  @time %>
+</p>
+<p>
+  <%=  link_to 'Say goodbye', say_goodbye_path %>
+</p>
+<p>
+  Addition: <%=  1+2 %>
+</p>
+<p>
+  Concatenation: <%=  "cow"+"boy" %>
+</p>
+<p>
+  Time in one hour: <%=  1.hour.from_now %>
+</p>
+<p>
+  <%= @files = Dir.glob('*') %>
+  <% for file in @files%>
+  <ul> filename is: <%=  file %> </ul>
+  <% end %>
+</p>
