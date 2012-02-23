@@ -4,5 +4,5 @@ class User < ActiveRecord::Base
   validates :login,    :presence => true, :uniqueness => true
   validates :email,    :presence => true, :uniqueness => true
 
-  has_many :posts, dependent => :destroy
+  has_many :posts, :dependent => :destroy
 end
